@@ -5,12 +5,13 @@
     <div class="collapse navbar-collapse navbar-menubuilder">
       
      
-       <%= image_tag("logo1.png", :alt => "rss feed") %>
-      <ul class="nav navbar-nav navbar-right">
+       <%= link_to root_path do %> <%= image_tag("logo1.jpeg", :alt => "rss feed", :class => "logo1") %> <% end %>
+      <ul   id = "homeheader">
         
         <li><%= link_to root_path do %><i class="fa fa-home"></i> Trang Đầu<% end %></li>
+        <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i> Thông Tin <% end %></li>
         <li><%= link_to tonchi_path do %><i class="fa fa-book"></i> Tôn Chỉ<% end %></li>
-        <li><%= link_to cachoidoan_path do %><i class="fa fa-group"></i> Cac Hoi Doan<% end %></li>
+        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> Các Hội Đoàn<% end %></li>
         
       </ul>
 

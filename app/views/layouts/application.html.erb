@@ -4,9 +4,11 @@
     <title>Church</title>
   <%= stylesheet_link_tag 'application', media: 'all',
                           'data-turbolinks-track' => true %>
+  
   <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet'
         type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag '//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region=' %>
   <%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
   <%= csrf_meta_tags %>
@@ -16,7 +18,11 @@
   <body class="<%= yield(:class) %>">
 
     
+  <% if current_page?(root_path) %>
+    <%= render 'layouts/home_header' %>
+<% else %>
     <%= render 'layouts/header' %>
+<% end %>
     <div>
         
        <%= yield %>

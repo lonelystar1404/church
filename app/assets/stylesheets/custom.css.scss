@@ -139,12 +139,14 @@ ul {
 }
 
 .full2 {
-  // background: image-url('brickwall.png') center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
+  background: image-url('church2.jpg')  center center ;
+  // background: image-url('city.jpeg') no-repeat scroll center top transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ // background-size: 100%;
+  background-size: cover;
 }
-
 .style_image {
   border-right:  2px solid #000;
   border-left:   2px solid #000;
@@ -224,23 +226,52 @@ ul {
 #map-container #map-canvas label { 
   width: auto; display:inline; 
 }
-#geocoding,
-#reverse_geocoding {
-  background-color: #e6e6e6;
-  border-style: solid;
-  border-radius: 11px;
-  border-color: #e6e6e6;
-  color: #666;
-  padding: 0 8px;
+
+#homeheader {
+  color: black;
+ 
+  text-align: center;
+  margin-top: 2%;
+  
+}
+ul#homeheader li{
+  
+  display: inline;
+  margin: 20px 10px;
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+ul#homeheader a{
+  color: #111010;
+}
+ul#homeheader a:hover{
+  color: #F40202;
   text-decoration: none;
 }
+#church2{
+  
+ 
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: relative;
+  top: 0;
+  left: 0;
 
-
-#geocoding_fields, 
-#reverse_geocoding_fields {
-  display: none;
-  z-index: 100;
-  margin-left: 74px;
-  margin-top: -52px;
+}
+#ngayle{
+  margin: 50px;
+}
+#statement{
   position: absolute;
+  color: white;
+  top: 500px;
+  text-align: center;
 }
