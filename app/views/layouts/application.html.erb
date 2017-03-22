@@ -20,6 +20,7 @@
     
   <% if current_page?(root_path) %>
     <%= render 'layouts/home_header' %>
+    
 <% else %>
     <%= render 'layouts/header' %>
 <% end %>
@@ -27,7 +28,10 @@
         
        <%= yield %>
     </div>
-    
+     <% if current_page?(root_path) %>  
+    <%= render 'home/thongtin' %>
+<% end %>
+
     <%= render 'layouts/footer' %>
   </body>
 </html>

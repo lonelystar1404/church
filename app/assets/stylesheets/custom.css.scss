@@ -38,19 +38,20 @@ p {
 /* footer */
 
 .footer {
-  background: #e7e7e7;
+  background: #1B4B8E;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
   border-top: 1px solid $gray-medium-light;
+  color: white;
   .container {
     width: 100%;
-    background: #e7e7e7;
+    background: #1B4B8E;
     border-radius: 0px;
   }
   .text-muted {
-    color: #777;
+    color: #FFFFFF;
     margin: 20px 0;
     padding-left: 25px;
   }
@@ -73,7 +74,7 @@ input {
   color: red;
   ul {
     color: red;
-    margin: 0 0 30px 0;
+    margin: 0 0  0 0;
   }
 }
 
@@ -139,13 +140,19 @@ ul {
 }
 
 .full2 {
-  background: image-url('church2.jpg')  center center ;
-  // background: image-url('city.jpeg') no-repeat scroll center top transparent;
+  //background: image-url('church2.jpg')  center center ;
+   background: image-url('church2.jpeg') no-repeat scroll center top transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
  // background-size: 100%;
   background-size: cover;
+}
+
+.wordsOnPic  {
+  background-image: image-url('church2.jpg')  center center ;
+  // background: image-url('city.jpeg') no-repeat scroll center top transparent;
+
 }
 .style_image {
   border-right:  2px solid #000;
@@ -228,46 +235,102 @@ ul {
 }
 
 #homeheader {
-  color: black;
- 
+  color: #FFFFFF;
+  
   text-align: center;
-  margin-top: 2%;
+  
+  position: relative;
+  margin: 0 0 0 0;
+  background-color: rgba(153, 145, 145, 0.50);
+   padding: 10px;
   
 }
 ul#homeheader li{
   
   display: inline;
   margin: 20px 10px;
-  text-decoration: none;
-  color:black;
+  font-weight: bold;
+
+  color:#FFFFFF;
   text-align: center;
+  font-size: 23px;
+
 }
 ul#homeheader a{
-  color: #111010;
+  color: #FFFFFF;
 }
 ul#homeheader a:hover{
-  color: #F40202;
+  color: #FFD105;
   text-decoration: none;
 }
+
+// header for main page
+#homeheader2 {
+  color: #FFFFFF;
+  
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  margin: 0 0 0 0;
+  background-color: rgba(153, 145, 145, 0.50);
+    padding: 10px;
+  
+}
+ul#homeheader2 li{
+
+  
+  display: inline;
+  margin: 20px 10px;
+  font-weight: bold;
+
+  color:#FFFFFF;
+  text-align: center;
+  font-size: 23px;
+}
+ul#homeheader2 a{
+  color: #FFFFFF;
+}
+ul#homeheader2 a:hover{
+  color: #FFD105;
+  text-decoration: none;
+}
+
+#logo {
+  background-color: #1B4B8E ;
+  height: 80px;
+
+}
+
 #church2{
   
- 
+  
+  position: relative;
+
+  z-index: -111;
   /* Set rules to fill background */
-  min-height: 100%;
+  min-height: 50%;
   min-width: 1024px;
 	
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height: 500px;
 	
   /* Set up positioning */
-  position: relative;
+
   top: 0;
   left: 0;
 
 }
 #ngayle{
   margin: 50px;
+
+  position:  static  ; 
+
+  left:0;
+
+  
+  
 }
 #statement{
   position: absolute;
@@ -275,3 +338,78 @@ ul#homeheader a:hover{
   top: 500px;
   text-align: center;
 }
+#fixedbar {
+  position: fixed;
+  float: right;
+  right : 50px;
+  bottom: 50px;
+  z-index: 9999;
+  border: 1px;
+
+ 
+}
+
+// CSS for Hinh Anh page. The code borrow from Dynamic Drive at the website: http://www.dynamicdrive.com/style/csslibrary/item/css-image-gallery/
+
+
+.gallerycontainer{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+
+height:1000px;
+
+}
+.gallerycontainer a {
+  width: 150px;
+  height: 120px;
+  float: left;
+    background-color: transparent;
+    border: none;
+}
+
+.thumbnail img{
+ 
+
+border: none;
+
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+
+
+visibility: hidden;
+
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+  position: absolute;
+  right: 250px;
+top: 150px;
+border-width: 0;
+padding: 2px;
+height: 550px;
+width: 750px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+
+
+}
+#icon{
+  height: 100px;
+  width: 125px;
+}
+
+

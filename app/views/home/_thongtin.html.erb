@@ -3,6 +3,38 @@
 
 <body>
 <!-- Use code from http://www.menucool.com/slider/javascript-image-slider-demo1 -->
+<div  >
+
+     
+      <%= link_to root_path do %> <%= image_tag("logo1.jpeg", :alt => "logo", :class =>"logo1") %> <% end %>                                        
+      <ul id ="menu">
+       
+      <li><%= link_to root_path do %><i class="fa fa-home"></i> <div id = "hidden"> Trang Đầu </div><% end %></li>
+        <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i> <div id = "hidden"> Thông Tin </div> <% end %></li>
+        <li><%= link_to tonchi_path do %><i class="fa fa-book"></i> <div id = "hidden"> Tôn Chỉ </div><% end %></li>
+        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> <div id = "hidden"> Các Hội Đoàn</div><% end %></li>
+        
+        
+      </ul>
+
+      
+
+    </div>
+ 
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop()  < 200) {
+                $('#menu').fadeOut(500);
+            } else {
+                $('#menu').fadeIn(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
 <div id="sliderFrame" data-turbolinks="false">
         <div id="slider">
             
@@ -28,7 +60,7 @@
 
                      <!-- THANH LE MUA HE  -->
 
-                    <p style="font-family:verdana;font-size:150%;color:red">
+                    <p style="font-family:verdana;font-size:150%; color:#1B4B8E ">
                     <blink><strong>CÁC THÁNH LỄ CHÚA NHẬT TRONG MÙA HÈ:</strong></blink></p>
 
 
@@ -67,7 +99,7 @@
                          </p>
                     </ul>
                    </br>
-                  <p style="font-family:verdana;font-size:150%;color:red">
+                  <p style="font-family:verdana;font-size:150%; color:#1B4B8E ">
                   <blink><strong>Chương Trình Hành Hương núi Đức Mẹ lộ Đức, Emmitsburg ngày 14-8-2016:</br></strong></blink></p>
 
 

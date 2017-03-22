@@ -1,4 +1,7 @@
-<body>
+<div class="picbackground">
+<%= image_tag("church2.jpg",  alt: "church", id: "church2") %>
+</div>
+<body class="container">
 <div>
 <div  >
 
@@ -6,10 +9,15 @@
       <%= link_to root_path do %> <%= image_tag("logo1.jpeg", :alt => "logo", :class =>"logo1") %> <% end %>                                        
       <ul id ="menu">
        
-        <li><%= link_to root_path do %><i class="fa fa-home"></i> <% end %></li>
-        <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i>  <% end %></li>
-        <li><%= link_to tonchi_path do %><i class="fa fa-book"></i> <% end %></li>
-        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> <% end %></li>
+      <li data-turbolinks="false"><%= link_to root_path do %><i class="fa fa-home"></i> <div id = "hidden"> Trang Đầu </div><% end %></li>
+      <!--  <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i> <div id = "hidden"> Thông Tin </div> <% end %></li> -->
+        <li><%= link_to tonchi_path do %><i class="fa fa-book"></i> <div id = "hidden"> Tôn Chỉ </div><% end %></li>
+        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> <div id = "hidden"> Các Hội Đoàn</div><% end %></li>
+       <li><%= link_to cadoan_path  do%><i class="fa fa-music"></i><div id = "hidden">  Ca Đoàn</div><% end %></li>
+        <li><%= link_to truonggiaoly_path  do%><i class="fa fa-university"></i> <div id = "hidden">Giáo Lý và Việt Ngữ </div> <% end %></li>
+        <li><%= link_to hinhanh_path  do%><i class="fa fa-camera"></i> <div id = "hidden">Hình ảnh Sinh hoạt </div> <% end %></li>
+        <li><%= link_to noiket_path  do%><i class="fa fa-phone"></i> <div id = "hidden">Liên lạc </div> <% end %></li>
+        
         
       </ul>
 
@@ -34,7 +42,8 @@
 </div>
 <!-- End navigation -->
 
-<%= image_tag("church2.jpg",  alt: "church", id: "church2") %>
+
+
 
 
 <div id="statement" >
@@ -42,12 +51,12 @@
   
 </div>
 
-  <div id="ngayle" class="container" class="container-gloss">
+  <div id="ngayle" >
     
                     
-                    <h3 style="color:red"> <strong>Linh Mục chánh xứ: </strong>Cha JOSEPH TRẦN CHÚC</h3>
+                    <h3 style="color:#1B4B8E "> <strong>Linh Mục chánh xứ: </strong>Cha JOSEPH TRẦN CHÚC</h3>
                     <br>
-                    <h4 style="color:red">  <strong>LỊCH SINH HOẠT CÁC NGÀY CHÚA NHẬT QUANH NĂM:</strong></h4>  
+                    <h4  style="color:#1B4B8E ">  <strong>LỊCH SINH HOẠT CÁC NGÀY CHÚA NHẬT QUANH NĂM:</strong></h4>  
                     <ul>        
                         <li><strong> Thánh Lễ I:</strong> 9:00 giờ sáng </li>
                         <li><strong> Thánh Lễ II:</strong> 11:00 giờ sáng </li>
@@ -58,6 +67,6 @@
 
 
 
-            
+       <a  id="fixedbar" href="https://www.facebook.com/groups/Lavang.Baltimore/">  <i style="font-size:200%;color:#1B4B8E;background-color: white" class="fa fa-facebook-official" ></i> </a>           
 
 </body>

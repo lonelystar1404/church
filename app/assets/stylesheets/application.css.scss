@@ -127,7 +127,7 @@ li{
 	width:100%; 
 	height:40px; 
 //	background-color:#FFFFFF;
-	color: black;
+	color: #FFFFFF;
 	z-index:9999;
 	display: none;
   fone-size: 6px;
@@ -143,20 +143,32 @@ li{
 }
 
 #menu  li a {
-    display: inline;
+    //display: inline;
     padding: 8px 15px;
     text-decoration: none;
     text-align:center;
-    color: black;
+    color: #1B4B8E ;
     font-size: 20px;
     }
+#hidden {
+  display: none;
+}
     
 #menu li a:hover {
-    color: red;
+    color: #F4BD07;
     text-align:center;
-    font-size: 28px;
-  //  background-color:   #fff;
+    font-size: 25px;
+  //  background-color:   #FFFFFF;
+    
   }
+  #menu li a:hover #hidden {
+display: inline-block;
+text-align: center;
+  //  background-color:   #fff;
+    
+  }
+      
+
     /* End navigation bar styling. */
 .HDMV {
   position: relative;

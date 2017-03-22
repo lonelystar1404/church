@@ -1,23 +1,24 @@
-<div id ="custom-navbar" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+  <div id="logo">
+    
+  </div>
+<div  >
 
-
-    <div class="collapse navbar-collapse navbar-menubuilder">
-      
      
-       <%= link_to root_path do %> <%= image_tag("logo1.jpeg", :alt => "rss feed", :class => "logo1") %> <% end %>
+     
       <ul   id = "homeheader">
         
-        <li><%= link_to root_path do %><i class="fa fa-home"></i> Trang Đầu<% end %></li>
-        <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i> Thông Tin <% end %></li>
+         <li data-turbolinks="false"><%= link_to root_path do %><i class="fa fa-home"></i> Trang Chính<% end %></li>
+    <!--    <li data-turbolinks="false"><%= link_to thongtin_path do %><i class="fa fa-info"></i> Thông Tin <% end %></li> -->
         <li><%= link_to tonchi_path do %><i class="fa fa-book"></i> Tôn Chỉ<% end %></li>
-        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> Các Hội Đoàn<% end %></li>
-        
+        <li><%= link_to cachoidoan_path  do%><i class="fa fa-group"></i> HDMV<% end %></li>
+        <li><%= link_to cadoan_path  do%><i class="fa fa-music"></i> Ca Đoàn<% end %></li>
+        <li><%= link_to truonggiaoly_path  do%><i class="fa fa-university"></i> Giáo Lý và Việt Ngữ<% end %></li>
+        <li><%= link_to hinhanh_path  do%><i class="fa fa-camera"></i> Hình ảnh Sinh hoạt<% end %></li>
+        <li><%= link_to noiket_path  do%><i class="fa fa-phone"></i> Liên lạc<% end %></li>
       </ul>
 
       
 
-    </div>
-  </div>
+  
   
 </div>
